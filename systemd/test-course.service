@@ -1,0 +1,12 @@
+[Unit]
+Description=Тестовый сервис для курсовой работы
+Documentation=https://example.com
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c 'while true; do echo "Тестовый сервис работает: $(date)" >> /tmp/course-test.log; sleep 60; done'
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

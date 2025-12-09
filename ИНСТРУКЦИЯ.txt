@@ -1,0 +1,4 @@
+ПРОВЕРКА:
+1. ./service-manager.sh
+2. rpm -qip rpm/service-manager-*.rpm
+3. cat rpm/service-manager.spec

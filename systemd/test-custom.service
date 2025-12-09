@@ -1,0 +1,10 @@
+[Unit]
+Description=Тестовый сервис
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c 'echo "Сервис работает: $(date)" >> /tmp/test.log && sleep 3600'
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
