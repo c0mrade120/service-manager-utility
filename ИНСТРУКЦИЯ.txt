@@ -1,4 +1,6 @@
 ПРОВЕРКА:
-1. ./service-manager.sh
-2. rpm -qip rpm/service-manager-*.rpm
-3. cat rpm/service-manager.spec
+1. ./service-manager.sh - запуск утилиты
+2. rpm -qip rpm/service-manager-*.rpm - просмотр информации RPM пакета
+3. cat rpm/service-manager.spec - просмотр SPEC-файла
+4. cat ~/.config/systemd/user/test-custom.service - просмотр systemd
+5. cat -n service-manager.sh - просмотр кода 
